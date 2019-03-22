@@ -6,7 +6,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.6.0
+Version:        0.7.0
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -14,9 +14,6 @@ Summary:        Crossplatform terminal library for manipulating terminals
 License:        MIT
 URL:            https://crates.io/crates/crossterm
 Source:         %{crates_source}
-# Initial patched metadata
-# Update crossterm_style to 0.2, https://github.com/TimonPost/crossterm/pull/94
-Patch0:         crossterm-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 
@@ -180,9 +177,6 @@ which use "terminal" feature of "%{crate}" crate.
 
 %prep
 %autosetup -n %{crate}-%{version_no_tilde} -p1
-# XXX: Technically this is an API break, but nothing uses that function
-#      and it is not worth packaging old version of crossterm_style.
-find -type f -exec sed -i -e "s/ColorType, //" {} +
 %cargo_prep
 
 %build
@@ -197,5 +191,8 @@ find -type f -exec sed -i -e "s/ColorType, //" {} +
 %endif
 
 %changelog
+* Fri Mar 22 2019 Josh Stone <jistone@redhat.com> - 0.7.0-1
+- Update to 0.7.0
+
 * Fri Mar 15 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.6.0-1
 - Initial package
