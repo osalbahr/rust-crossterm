@@ -5,7 +5,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.8.0
+Version:        0.8.1
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -190,6 +190,9 @@ which use "terminal" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Fri Apr 05 09:03:46 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.1-1
+- Update to 0.8.1
+
 * Thu Apr 04 08:13:39 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.0-1
 - Update to 0.8.0
 
