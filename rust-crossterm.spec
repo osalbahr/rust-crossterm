@@ -5,7 +5,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.8.2
+Version:        0.9.3
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -16,12 +16,12 @@ Source:         %{crates_source}
 ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging
-BuildRequires:  (crate(crossterm_cursor/default) >= 0.1.0 with crate(crossterm_cursor/default) < 0.2.0)
-BuildRequires:  (crate(crossterm_input/default) >= 0.2.1 with crate(crossterm_input/default) < 0.3.0)
-BuildRequires:  (crate(crossterm_screen/default) >= 0.1.0 with crate(crossterm_screen/default) < 0.2.0)
-BuildRequires:  (crate(crossterm_style/default) >= 0.2.0 with crate(crossterm_style/default) < 0.3.0)
-BuildRequires:  (crate(crossterm_terminal/default) >= 0.1.0 with crate(crossterm_terminal/default) < 0.2.0)
-BuildRequires:  (crate(crossterm_utils/default) >= 0.1.0 with crate(crossterm_utils/default) < 0.2.0)
+BuildRequires:  (crate(crossterm_cursor/default) >= 0.2.1 with crate(crossterm_cursor/default) < 0.3.0)
+BuildRequires:  (crate(crossterm_input/default) >= 0.3.3 with crate(crossterm_input/default) < 0.4.0)
+BuildRequires:  (crate(crossterm_screen/default) >= 0.2.1 with crate(crossterm_screen/default) < 0.3.0)
+BuildRequires:  (crate(crossterm_style/default) >= 0.3.1 with crate(crossterm_style/default) < 0.4.0)
+BuildRequires:  (crate(crossterm_terminal/default) >= 0.2.2 with crate(crossterm_terminal/default) < 0.3.0)
+BuildRequires:  (crate(crossterm_utils/default) >= 0.2.1 with crate(crossterm_utils/default) < 0.3.0)
 
 %global _description \
 An crossplatform terminal library for manipulating terminals.
@@ -190,6 +190,9 @@ which use "terminal" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Apr 20 10:40:41 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.3-1
+- Update to 0.9.3
+
 * Fri Apr 05 17:25:13 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.2-1
 - Update to 0.8.2
 
