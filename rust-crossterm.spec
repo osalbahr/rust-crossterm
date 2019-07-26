@@ -7,7 +7,7 @@
 
 Name:           rust-%{crate}
 Version:        0.9.6
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
 # Upstream license specification: MIT
@@ -192,6 +192,9 @@ which use "terminal" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Sat Jun 22 11:49:17 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.6-1
 - Update to 0.9.6
 
