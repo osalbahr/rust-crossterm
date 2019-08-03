@@ -5,7 +5,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.10.1
+Version:        0.10.2
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -13,9 +13,6 @@ Summary:        Crossplatform terminal library for manipulating terminals
 License:        MIT
 URL:            https://crates.io/crates/crossterm
 Source:         %{crates_source}
-# Initial patched metadata
-# * Bump min versions, https://github.com/TimonPost/crossterm/pull/185
-Patch0:         crossterm-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -194,6 +191,9 @@ which use "terminal" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Aug 03 16:37:21 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.10.2-1
+- Update to 0.10.2
+
 * Sun Jul 28 18:46:00 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.10.1-1
 - Update to 0.10.1
 
