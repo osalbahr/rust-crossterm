@@ -1,27 +1,12 @@
---- crossterm-0.13.3/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ crossterm-0.13.3/Cargo.toml	2019-12-11T18:34:59.841113+00:00
-@@ -37,11 +37,11 @@
- optional = true
- 
- [features]
--cursor = ["lazy_static", "input", "winapi/wincon", "winapi/winnt", "winapi/minwindef"]
-+cursor = ["lazy_static", "input"]
- default = ["cursor", "style", "terminal", "screen", "input"]
--input = ["mio", "lazy_static", "screen", "winapi/winnt", "winapi/winuser"]
--screen = ["lazy_static", "winapi/wincon", "winapi/minwindef"]
--style = ["lazy_static", "winapi/wincon"]
-+input = ["mio", "lazy_static", "screen"]
-+screen = ["lazy_static"]
-+style = ["lazy_static"]
- terminal = ["cursor"]
- [target."cfg(unix)".dependencies.libc]
- version = "0.2.51"
-@@ -49,8 +49,3 @@
- [target."cfg(unix)".dependencies.mio]
- version = "0.6.19"
- optional = true
+--- crossterm-0.14.1/Cargo.toml	1970-01-01T00:00:00+00:00
++++ crossterm-0.14.1/Cargo.toml	2019-12-27T09:27:17.055358+00:00
+@@ -71,9 +71,3 @@
+ [target."cfg(unix)".dependencies.signal-hook]
+ version = "0.1.12"
+ features = ["mio-support"]
 -[target."cfg(windows)".dependencies.crossterm_winapi]
--version = "0.4.0"
+-version = "0.5.1"
 -
 -[target."cfg(windows)".dependencies.winapi]
 -version = "0.3.8"
+-features = ["winuser"]
