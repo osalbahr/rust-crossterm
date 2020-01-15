@@ -6,7 +6,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.14.1
+Version:        0.14.2
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -111,6 +111,9 @@ which use "serde" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Wed Jan 15 2020 Josh Stone <jistone@redhat.com> - 0.14.2-1
+- Update to 0.14.2
+
 * Fri Dec 27 10:27:17 CET 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.14.1-1
 - Update to 0.14.1
 
