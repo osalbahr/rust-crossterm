@@ -7,7 +7,7 @@
 
 Name:           rust-%{crate}
 Version:        0.14.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
 # Upstream license specification: MIT
@@ -111,6 +111,9 @@ which use "serde" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.14.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Wed Jan 15 2020 Josh Stone <jistone@redhat.com> - 0.14.2-1
 - Update to 0.14.2
 
