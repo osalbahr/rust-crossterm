@@ -6,8 +6,8 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.16.0
-Release:        2%{?dist}
+Version:        0.17.4
+Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
 # Upstream license specification: MIT
@@ -17,8 +17,6 @@ Source:         %{crates_source}
 # Initial patched metadata
 # * No windows
 Patch0:         crossterm-fix-metadata.diff
-# https://github.com/crossterm-rs/crossterm/commit/007063896e8b310a6711d7ab780962a9f8ed7283
-Patch0001:      0001-Automatically-close-raw-fd-383.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -96,7 +94,6 @@ which use "serde" feature of "%{crate}" crate.
 
 %prep
 %autosetup -n %{crate}-%{version_no_tilde} -p1
-find -type f -exec chmod -x '{}' '+'
 %cargo_prep
 
 %generate_buildrequires
@@ -114,6 +111,9 @@ find -type f -exec chmod -x '{}' '+'
 %endif
 
 %changelog
+* Sun May 10 14:37:51 CEST 2020 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.17.4-1
+- Update to 0.17.4
+
 * Thu Mar 19 2020 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.16.0-2
 - Fix leaking fd's
 
