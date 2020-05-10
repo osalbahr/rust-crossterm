@@ -94,6 +94,7 @@ which use "serde" feature of "%{crate}" crate.
 
 %prep
 %autosetup -n %{crate}-%{version_no_tilde} -p1
+find -type f -executable -exec chmod -v -x '{}' +
 %cargo_prep
 
 %generate_buildrequires
