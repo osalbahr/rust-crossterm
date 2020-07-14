@@ -6,7 +6,7 @@
 %global crate crossterm
 
 Name:           rust-%{crate}
-Version:        0.17.6
+Version:        0.17.7
 Release:        1%{?dist}
 Summary:        Crossplatform terminal library for manipulating terminals
 
@@ -112,6 +112,9 @@ find -type f -executable -exec chmod -v -x '{}' +
 %endif
 
 %changelog
+* Tue Jul 14 2020 Josh Stone <jistone@redhat.com> - 0.17.7-1
+- Update to 0.17.7
+
 * Fri Jul 10 2020 Josh Stone <jistone@redhat.com> - 0.17.6-1
 - Update to 0.17.6
 
