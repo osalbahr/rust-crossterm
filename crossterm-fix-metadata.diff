@@ -1,5 +1,14 @@
---- crossterm-0.17.6/Cargo.toml	2020-07-06T17:58:34+00:00
-+++ crossterm-0.17.6/Cargo.toml	2020-07-10T17:22:16.807630+00:00
+--- crossterm-0.17.7/Cargo.toml	2020-07-13T19:33:25+00:00
++++ crossterm-0.17.7/Cargo.toml	2020-09-11T22:54:04.818132+00:00
+@@ -41,7 +41,7 @@
+ version = "1.4"
+ 
+ [dependencies.parking_lot]
+-version = "0.10"
++version = "0.11"
+ 
+ [dependencies.serde]
+ version = "1.0"
 @@ -73,9 +73,3 @@
  [target."cfg(unix)".dependencies.signal-hook]
  version = "0.1.15"
