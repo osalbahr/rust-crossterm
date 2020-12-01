@@ -1,20 +1,11 @@
---- crossterm-0.17.7/Cargo.toml	2020-07-13T19:33:25+00:00
-+++ crossterm-0.17.7/Cargo.toml	2020-09-11T22:54:04.818132+00:00
-@@ -41,7 +41,7 @@
- version = "1.4"
- 
- [dependencies.parking_lot]
--version = "0.10"
-+version = "0.11"
- 
- [dependencies.serde]
- version = "1.0"
-@@ -73,9 +73,3 @@
+--- crossterm-0.18.2/Cargo.toml	2020-10-29T16:47:26+00:00
++++ crossterm-0.18.2/Cargo.toml	2020-12-01T15:22:55.993143+00:00
+@@ -81,9 +81,3 @@
  [target."cfg(unix)".dependencies.signal-hook]
  version = "0.1.15"
  features = ["mio-0_7-support"]
 -[target."cfg(windows)".dependencies.crossterm_winapi]
--version = "0.6.1"
+-version = "0.6.2"
 -
 -[target."cfg(windows)".dependencies.winapi]
 -version = "0.3.8"
