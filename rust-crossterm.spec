@@ -7,7 +7,7 @@
 
 Name:           rust-%{crate}
 Version:        0.19.0
-Release:        2%{?dist}
+Release:        %autorelease
 Summary:        Crossplatform terminal library for manipulating terminals
 
 # Upstream license specification: MIT
@@ -111,87 +111,4 @@ which use "serde" feature of "%{crate}" crate.
 %endif
 
 %changelog
-* Fri Jul 23 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.19.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
-
-* Sun Mar 21 15:46:54 CET 2021 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.19.0-1
-- Update to 0.19.0
-
-* Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.18.2-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
-
-* Tue Dec 01 2020 Fabio Valentini <decathorpe@gmail.com> - 0.18.2-1
-- Update to version 0.18.2.
-- Fixes RHBZ#1883428
-
-* Fri Sep 11 2020 Josh Stone <jistone@redhat.com> - 0.17.7-3
-- Bump to parking_lot 0.11
-
-* Wed Jul 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.17.7-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
-
-* Tue Jul 14 2020 Josh Stone <jistone@redhat.com> - 0.17.7-1
-- Update to 0.17.7
-
-* Fri Jul 10 2020 Josh Stone <jistone@redhat.com> - 0.17.6-1
-- Update to 0.17.6
-
-* Sat May 23 20:16:32 CEST 2020 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.17.5-1
-- Update to 0.17.5
-
-* Sun May 10 14:37:51 CEST 2020 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.17.4-1
-- Update to 0.17.4
-
-* Thu Mar 19 2020 Igor Raits <ignatenkobrain@fedoraproject.org> - 0.16.0-2
-- Fix leaking fd's
-
-* Thu Mar 19 2020 Josh Stone <jistone@redhat.com> - 0.16.0-1
-- Update to 0.16.0
-
-* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.14.2-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Wed Jan 15 2020 Josh Stone <jistone@redhat.com> - 0.14.2-1
-- Update to 0.14.2
-
-* Fri Dec 27 10:27:17 CET 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.14.1-1
-- Update to 0.14.1
-
-* Wed Dec 11 19:34:59 CET 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.13.3-1
-- Update to 0.13.3
-
-* Sat Aug 03 16:37:21 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.10.2-1
-- Update to 0.10.2
-
-* Sun Jul 28 18:46:00 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.10.1-1
-- Update to 0.10.1
-
-* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.6-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
-
-* Sat Jun 22 11:49:17 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.6-1
-- Update to 0.9.6
-
-* Fri May 31 2019 Josh Stone <jistone@redhat.com> - 0.9.5-1
-- Update to 0.9.5
-
-* Wed May 15 20:13:25 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.4-1
-- Update to 0.9.4
-
-* Sat Apr 20 10:40:41 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.3-1
-- Update to 0.9.3
-
-* Fri Apr 05 17:25:13 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.2-1
-- Update to 0.8.2
-
-* Fri Apr 05 09:03:46 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.1-1
-- Update to 0.8.1
-
-* Thu Apr 04 08:13:39 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.0-1
-- Update to 0.8.0
-
-* Fri Mar 22 2019 Josh Stone <jistone@redhat.com> - 0.7.0-1
-- Update to 0.7.0
-
-* Fri Mar 15 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.6.0-1
-- Initial package
+%autochangelog
